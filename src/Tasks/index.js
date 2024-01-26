@@ -7,7 +7,7 @@ const Tasks = (props) => (
                 <button className="taskList__button taskList__button--toggleDone">
                     {task.done ? "✓" : ""}
                 </button>
-                <span className={`"${task.done ? "taskList__task--done" : ""}"`}>{task.content}</span>
+                <span className={`${task.done ? "taskList__task--done" : ""}`}>{task.content}</span>
                 <button className="taskList__button taskList__button--remove">🗑️</button>
             </li>
         ))}

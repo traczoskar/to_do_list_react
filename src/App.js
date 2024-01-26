@@ -1,6 +1,7 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
+import Section from "./Section";
 
 let taskList = [
   {
@@ -31,17 +32,15 @@ function App() {
   return (
     <main className="container">
       <h1 className="container__header">Lista zadań</h1>
-      <section className="section">
-        <h2 className="section__header">Dodaj nowe zadanie</h2>
-      </section>
-      <Form />
-      <section className="section">
-        <div className="section--grid">
-          <h2 className="section__title">Lista zadań</h2>
-          <Buttons taskList={taskList} hideDoneTasks={hideDoneTasks} />
-        </div>
-        <Tasks taskList={taskList} hideDoneTasks={hideDoneTasks} />
-      </section>
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+      />
+      <Section
+        title="Lista zadań"
+        body={<Tasks taskList={taskList} hideDoneTasks={hideDoneTasks} />}
+        extraHeaderContent={<Buttons taskList={taskList} hideDoneTasks={hideDoneTasks} />}
+      />
     </main>
   );
 };

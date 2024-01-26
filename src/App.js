@@ -1,4 +1,29 @@
+import Form from "./Form";
 
+let taskList = [
+  {
+    id: 1,
+    content: "zrobić zakupy 🛍️",
+    done: true,
+  },
+  {
+    id: 2,
+    content: "wstawić zmywarkę 🍽️",
+    done: false,
+  },
+  {
+    id: 3,
+    content: "umyć samochód 🚙",
+    done: false,
+  },
+  {
+    id: 4,
+    content: "zabookować bilety 🎟️",
+    done: false,
+  },
+];
+
+let hideDoneTasks = false;
 
 function App() {
   return (
@@ -6,19 +31,15 @@ function App() {
       <h1 className="container__header">Lista zadań</h1>
       <section className="section">
         <h2 className="section__header">Dodaj nowe zadanie</h2>
-        <form className="form js-form">
-          <input className="form__input js-input" placeholder="Co jest do zrobienia?" autofocus />
-            <button className="form__button js-addTask">Dodaj zadanie</button>
-        </form>
       </section>
-
+      <Form />
       <section className="section">
         <div className="section--grid">
           <h2 className="section__title">Lista zadań</h2>
-          <div className="buttons js-buttons">
+          <div className="buttons">
           </div>
         </div>
-        <ul className="taskList js-tasks"></ul>
+        <ul className="taskList"></ul>
       </section>
     </main>
   );

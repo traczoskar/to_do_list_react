@@ -1,5 +1,3 @@
-
-
 const Section = ({ title, body, extraHeaderContent }) => (
     <section className="section">
         <div className="section--grid">

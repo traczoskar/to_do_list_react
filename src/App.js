@@ -1,4 +1,5 @@
 import Form from "./Form";
+import Tasks from "./Tasks";
 
 let taskList = [
   {
@@ -39,7 +40,7 @@ function App() {
           <div className="buttons">
           </div>
         </div>
-        <ul className="taskList"></ul>
+        <Tasks taskList={taskList} hideDoneTasks={hideDoneTasks} />
       </section>
     </main>
   );

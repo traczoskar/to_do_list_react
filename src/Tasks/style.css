@@ -37,7 +37,6 @@
 
 .taskList__button--toggleDone:hover {
     background-color: hsl(120, 100%, 35%);
-    transform: scale(1.05);
 }
 
 .taskList__button--toggleDone:active {
@@ -50,7 +49,6 @@
 
 .taskList__button--remove:hover {
     background-color: hsl(0, 86%, 60%);
-    transform: scale(1.05);
 }
 
 .taskList__button--remove:active {

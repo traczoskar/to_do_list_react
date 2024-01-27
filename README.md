@@ -1,6 +1,37 @@
-# Getting Started with Create React App
+# To do list - in React.js
+### **Your daily task assistant**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. For now it's only visual version, for sure this repository will be developed with logic in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
+
+**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
+## Features
+
+- Simple, transparent and minimalistic design
+- Easy and intuitive to use
+- Versatile and universal application (without interactions for now)
+- Responsive on any device due to media queries
+- Buttons appearance depends of actual state
+
+![App design](public/images/to_do_list_react_screenshot.png)
+
+## Used technologies and conventions
+
+- **React.js** Components, JSX, React DOM
+- **Create React App**
+- **npm**
+- **Node.js**
+- **Babel** transform JSX
+- **JS ES6 Features:** (arrays, methods, spread syntax, objects, arrow functions, immutabililty, merging)
+- **BEM** convention
+- **camelCase** class and functions naming
+- **CSS:** (normalize.css) applied
+- **CSS:** (border-box: box-sizing) applied
+- **CSS:** Grid
+- **CSS:** Transform and transitions
+
+Below you can seen how does the application look on **mobile devices**:
+
+![Mobile look](public/images/to_do_list_react_mobile.png)
 
 ## Available Scripts
 

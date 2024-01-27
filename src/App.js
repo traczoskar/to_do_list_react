@@ -8,22 +8,22 @@ import Container from "./Container";
 let taskList = [
   {
     id: 1,
-    content: "zrobić zakupy 🛍️",
+    content: "zrobić zakupy",
     done: true,
   },
   {
     id: 2,
-    content: "wstawić zmywarkę 🍽️",
+    content: "wstawić zmywarkę",
     done: false,
   },
   {
     id: 3,
-    content: "umyć samochód 🚙",
+    content: "umyć samochód",
     done: false,
   },
   {
     id: 4,
-    content: "zabookować bilety 🎟️",
+    content: "zabookować bilety",
     done: false,
   },
 ];

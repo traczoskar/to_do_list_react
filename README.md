@@ -4,6 +4,10 @@
 **To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. For now it's only visual version, for sure this repository will be developed with logic in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
 
 **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
+
+### **[To do list - in React.js - App link](https://traczoskar.github.io/to_do_list_react/)**
+
+
 ## Features
 
 - Simple, transparent and minimalistic design

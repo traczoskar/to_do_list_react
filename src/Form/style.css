@@ -14,6 +14,7 @@
 .form__input {
     padding: 10px;
     border: 1px solid #ddd;
+    width: 100%;
 }
 
 .form__input:active {
@@ -28,6 +29,7 @@
     transition: 0.3s;
     background-color: hsl(180, 100%, 25%);
     color: #ffff;
+    width: 100%;
 }
 
 .form__button:hover {

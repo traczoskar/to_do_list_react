@@ -16,7 +16,7 @@
 - Responsive on any device due to media queries
 - Buttons appearance depends of actual state
 
-![App design](public/images/to_do_list_react_screenshot.png)
+![App design](src/images/to_do_list_react_screenshot.png)
 
 ## Used technologies and conventions
 
@@ -35,7 +35,7 @@
 
 Below you can seen how does the application look on **mobile devices**:
 
-![Mobile look](public/images/to_do_list_react_mobile.png)
+![Mobile look](src/images/to_do_list_react_mobile.png)
 
 ## Available Scripts
 

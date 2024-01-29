@@ -49,8 +49,17 @@ function App() {
         />
         <Section
           title="Lista zadań"
-          body={<Tasks taskList={taskList} hideDone={hideDone} />}
-          extraHeaderContent={<Buttons taskList={taskList} hideDone={hideDone} toggleHideDone={toggleHideDone} />}
+          body={
+            <Tasks
+              taskList={taskList}
+              hideDone={hideDone} />
+          }
+          extraHeaderContent={
+            <Buttons
+              taskList={taskList}
+              hideDone={hideDone}
+              toggleHideDone={toggleHideDone} />
+          }
         />
       </main>
     </Container>

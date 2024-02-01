@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -6,46 +6,49 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-
+const defaultTasks = [
+  { id: 1, content: "zrobić zakupy", done: true },
+  { id: 2, content: "wstawić zmywarkę", done: false },
+  { id: 3, content: "umyć samochód", done: false },
+  { id: 4, content: "zabookować bilety", done: false },
+];
 
 function App() {
-
   const [hideDone, setHideDone] = useState(false);
 
-  const [taskList, setTaskList] = useState([
-    { id: 1, content: "zrobić zakupy", done: true, },
-    { id: 2, content: "wstawić zmywarkę", done: false, },
-    { id: 3, content: "umyć samochód", done: false, },
-    { id: 4, content: "zabookować bilety", done: false, },
-  ]);
+  const [taskList, setTaskList] = useState(defaultTasks);
 
   const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
+    setHideDone((hideDone) => !hideDone);
   };
 
   const removeTask = (id) => {
-    setTaskList(taskList => taskList.filter(task => task.id !== id));
+    setTaskList((taskList) => taskList.filter((task) => task.id !== id));
   };
 
   const toggleTaskDone = (id) => {
-    setTaskList(taskList => taskList.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
+    setTaskList((taskList) =>
+      taskList.map((task) => {
+        if (task.id === id) {
+          return { ...task, done: !task.done };
+        }
 
-      return task;
-    }));
+        return task;
+      })
+    );
   };
 
   const setAllDone = () => {
-    setTaskList(taskList => taskList.map(task => ({
-      ...task,
-      done: true,
-    })));
+    setTaskList((taskList) =>
+      taskList.map((task) => ({
+        ...task,
+        done: true,
+      }))
+    );
   };
 
   const addNewTask = (newTaskContent) => {
-    setTaskList(taskList => [
+    setTaskList((taskList) => [
       ...taskList,
       {
         content: newTaskContent,
@@ -54,7 +57,6 @@ function App() {
       },
     ]);
   };
-
 
   return (
     <Container>
@@ -86,7 +88,6 @@ function App() {
       </main>
     </Container>
   );
-};
-
+}
 
 export default App;

@@ -1,4 +1,5 @@
 # To do list - in React.js
+
 ### **Your daily task assistant**
 
 **To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. You can find below in a few quick steps how to apply its full potential. The construction of this app is based on React.js framework. For sure this repository will be developed in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
@@ -6,7 +7,6 @@
 **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 ### **[To do list - in React.js - App link](https://traczoskar.github.io/to_do_list_react/)**
-
 
 ## Features
 
@@ -16,18 +16,20 @@
 - Versatile and universal application
 - Responsive on any device due to media queries
 - Buttons are interactive and its appearance depends of actual state
+- You can mark any task that is done, hide/show done tasks, and mark all done with one button
+- Your actual task list is saved in your local storage and fetched whenever you refresh the app or close the window
 
 ## How to use
 
 **1.** Input the name of your task or shopping item that you want to add to your list.
 
-**2.** *"Click"* adding the task button on the right side of the input - "*Dodaj zadanie*".
+**2.** _"Click"_ adding the task button on the right side of the input - "_Dodaj zadanie_".
 
 **3.** The task will show up on the list below.
 
-**4.** Now you can use toggle the task to be *"done"* using the green button on its left side. The task will be crossed off and the button will get tick icon.
+**4.** Now you can use toggle the task to be _"done"_ using the green button on its left side. The task will be crossed off and the button will get tick icon.
 
-**5.** You can easily delete your task using the red *"remove"* button with waste bucket icon on the right side.
+**5.** You can easily delete your task using the red _"remove"_ button with waste bucket icon on the right side.
 
 **6.** After you add a task, there will be able 2 additional options: "Hide/Show tasks that are done" and "Finish all tasks".
 
@@ -38,11 +40,14 @@
 ## Used technologies and conventions
 
 - **React.js** - Components, JSX, React DOM
+- **React Hooks** - useState, useEffect
 - **Create React App**
 - **npm**
 - **Node.js**
 - **Babel** transform JSX
 - **JS ES6 Features:** (arrays, methods, spread syntax, objects, arrow functions, immutabililty, merging)
+- **JS Async** - setInterval, setTimeOut
+- **localStorage** - tasks saved and fetched
 - **BEM** convention
 - **camelCase** class and functions naming
 - **CSS:** (normalize.css) applied

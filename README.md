@@ -35,7 +35,7 @@
 
 **7.** Use one of those options to manage your list easier.
 
-![App design](src/images/to_do_list_react_screenshot.png)
+![App design](./to_do_list_react_screenshot.png)
 
 ## Used technologies and conventions
 
@@ -57,7 +57,7 @@
 
 Below you can seen how does the application look on **mobile devices**:
 
-![Mobile look](src/images/to_do_list_react_mobile.png)
+![Mobile look](./to_do_list_react_mobile.png)
 
 ## Available Scripts
 

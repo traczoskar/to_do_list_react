@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -16,7 +16,15 @@ const defaultTasks = [
 function App() {
   const [hideDone, setHideDone] = useState(false);
 
-  const [taskList, setTaskList] = useState(defaultTasks);
+  const taskListLocalStorage = localStorage.getItem("taskList");
+
+  const [taskList, setTaskList] = useState(
+    taskListLocalStorage ? JSON.parse(taskListLocalStorage) : defaultTasks
+  );
+
+  useEffect(() => {
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+  }, [taskList]);
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);

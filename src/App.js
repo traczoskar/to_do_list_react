@@ -19,7 +19,7 @@ function App() {
   const taskListLocalStorage = localStorage.getItem("taskList");
 
   const [taskList, setTaskList] = useState(
-    taskListLocalStorage ? JSON.parse(taskListLocalStorage) : defaultTasks
+    JSON.parse(taskListLocalStorage) || defaultTasks
   );
 
   useEffect(() => {

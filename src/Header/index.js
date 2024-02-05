@@ -1,9 +1,5 @@
-import "./style.css";
+import { ContainerHeader } from "./styled.js";
 
-const Header = ({ title }) => (
-    <h1 className="container__header">
-        {title}
-    </h1>
-);
+const Header = ({ title }) => <ContainerHeader>{title}</ContainerHeader>;
 
 export default Header;

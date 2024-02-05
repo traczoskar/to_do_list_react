@@ -44,10 +44,10 @@ export const Button = styled.button`
     css`
       background-color: hsl(120, 100%, 25%);
 
-      $:hover {
+      &:hover {
         background-color: hsl(120, 100%, 35%);
       }
-      $:active {
+      &:active {
         background-color: hsl(120, 100%, 45%);
       }
     `}
@@ -57,10 +57,10 @@ export const Button = styled.button`
     css`
       background-color: hsl(0, 100%, 40%);
 
-      $:hover {
+      &:hover {
         background-color: hsl(0, 86%, 60%);
       }
-      $:active {
+      &:active {
         background-color: hsl(1, 100%, 50%);
       }
     `}

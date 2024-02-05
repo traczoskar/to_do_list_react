@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const SectionWrapper = styled.section`
   margin: 10px 0;
-  box-shadow: 0px 0px 5px #ccc;
-  background-color: #ffff;
+  box-shadow: 0px 0px 5px ${({ theme }) => theme.color.silver};
+  background-color: ${({ theme }) => theme.color.white};
 `;
 
 export const SectionHeader = styled.div`
   display: grid;
   grid-template-columns: auto auto;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid ${({ theme }) => theme.color.gallery};
   padding: 20px;
   grid-gap: 20px;
   justify-content: space-between;

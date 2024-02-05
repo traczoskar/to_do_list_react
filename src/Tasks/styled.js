@@ -12,7 +12,7 @@ export const Task = styled.li`
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid ${({ theme }) => theme.color.gallery};
   padding: 10px;
 
   ${({ hidden }) =>
@@ -34,7 +34,7 @@ export const Button = styled.button`
   border: none;
   height: 30px;
   width: 30px;
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   padding: 0;
   transition: 0.3s;
   cursor: pointer;
@@ -42,26 +42,26 @@ export const Button = styled.button`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: hsl(120, 100%, 25%);
+      background-color: ${({ theme }) => theme.color.sanfelix};
 
       &:hover {
-        background-color: hsl(120, 100%, 35%);
+        filter: brightness(130%);
       }
       &:active {
-        background-color: hsl(120, 100%, 45%);
+        filter: brightness(160%);
       }
     `}
 
   ${({ remove }) =>
     remove &&
     css`
-      background-color: hsl(0, 100%, 40%);
+      background-color: ${({ theme }) => theme.color.milanored};
 
       &:hover {
-        background-color: hsl(0, 86%, 60%);
+        filter: brightness(120%);
       }
       &:active {
-        background-color: hsl(1, 100%, 50%);
+        filter: brightness(140%);
       }
     `}
 `;

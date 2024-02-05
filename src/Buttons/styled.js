@@ -9,15 +9,15 @@ export const ButtonSpecial = styled.button`
   border: none;
   background-color: transparent;
   padding: 10px;
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   margin: 0 0 0 20px;
   transition: 0.3s;
 
   &:hover {
-    color: hsl(180, 100%, 35%);
+    filter: brightness(140%);
   }
   &:disabled {
-    color: #bbb;
+    color: ${({ theme }) => theme.color.darksilver};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {

@@ -13,11 +13,11 @@ export const FormWrapper = styled.form`
 
 export const InputWindow = styled.input`
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid ${({ theme }) => theme.color.alto};
   width: 100%;
 
   &:active {
-    border: 1px solid black;
+    border: 1px solid ${({ theme }) => theme.color.black};
   }
 `;
 
@@ -27,15 +27,15 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 400;
   transition: 0.3s;
-  background-color: hsl(180, 100%, 25%);
-  color: #ffff;
+  background-color: ${({ theme }) => theme.color.teal};
+  color: ${({ theme }) => theme.color.white};
   width: 100%;
 
   &:hover {
-    background-color: hsla(180, 100%, 30%);
+    filter: brightness(115%);
     transform: scale(1.05);
   }
   &:active {
-    background-color: hsla(180, 100%, 35%);
+    filter: brightness(130%);
   }
 `;

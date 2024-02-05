@@ -1,32 +1,30 @@
-import { useState } from 'react';
+import { useState } from "react";
+import { FormWrapper, InputWindow, Button } from "./styled";
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
-
   const [newTaskContent, setNewTaskContent] = useState("");
 
   const onFormSubmit = (event) => {
     event.preventDefault();
 
     if (newTaskContent.trim() !== "") {
-      addNewTask(newTaskContent.trim())
+      addNewTask(newTaskContent.trim());
       setNewTaskContent("");
-    } 
-    else {
+    } else {
       alert("Treść zadania nie może być pusta!");
     }
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <input
+    <FormWrapper onSubmit={onFormSubmit}>
+      <InputWindow
         value={newTaskContent}
-        className="form__input"
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <button className="form__button">Dodaj zadanie</button>
-    </form>
+      <Button>Dodaj zadanie</Button>
+    </FormWrapper>
   );
 };
 

@@ -11,7 +11,7 @@ export const FormWrapper = styled.form`
   }
 `;
 
-export const InputWindow = styled.input`
+export const Input = styled.input`
   padding: 10px;
   border: 1px solid ${({ theme }) => theme.color.alto};
   width: 100%;

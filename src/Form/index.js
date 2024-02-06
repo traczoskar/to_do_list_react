@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { FormWrapper, InputWindow, Button } from "./styled";
+import { FormWrapper, Input, Button } from "./styled";
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -19,7 +19,7 @@ const Form = ({ addNewTask }) => {
 
   return (
     <FormWrapper onSubmit={onFormSubmit}>
-      <InputWindow
+      <Input
         value={newTaskContent}
         placeholder="Co jest do zrobienia?"
         ref={inputRef}

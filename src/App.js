@@ -5,7 +5,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Container from "./Container";
+import { StyledContainer } from "./Container";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -18,7 +18,7 @@ function App() {
     useTasks();
 
   return (
-    <Container>
+    <StyledContainer>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
@@ -43,7 +43,7 @@ function App() {
           />
         }
       />
-    </Container>
+    </StyledContainer>
   );
 }
 

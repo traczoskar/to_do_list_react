@@ -1,5 +1,15 @@
-import { Wrapper } from "./styled";
+import styled from "styled-components";
 
-const Container = ({ children }) => <Wrapper>{children}</Wrapper>;
+const Container = ({ className, children }) => (
+  <main className={className}>{children}</main>
+);
 
-export default Container;
+export const StyledContainer = styled(Container)`
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+  }
+`;

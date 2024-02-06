@@ -1,19 +1,19 @@
-import { ButtonSpecial, ButtonsWrapper } from "./styled";
+import { Button, ButtonsWrapper } from "./styled";
 
 const Buttons = ({ taskList, hideDone, toggleHideDone, setAllDone }) => (
   <ButtonsWrapper>
     {taskList.length > 0 && (
       <>
-        <ButtonSpecial onClick={toggleHideDone}>
+        <Button onClick={toggleHideDone}>
           {`${hideDone ? "Pokaż" : "Ukryj"}`} ukończone
-        </ButtonSpecial>
-        <ButtonSpecial
+        </Button>
+        <Button
           onClick={setAllDone}
           className="buttons__button"
           disabled={taskList.every(({ done }) => done)}
         >
           Ukończ wszystkie
-        </ButtonSpecial>
+        </Button>
       </>
     )}
   </ButtonsWrapper>

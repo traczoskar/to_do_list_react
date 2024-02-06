@@ -5,7 +5,7 @@ export const ButtonsWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export const ButtonSpecial = styled.button`
+export const Button = styled.button`
   border: none;
   background-color: transparent;
   padding: 10px;

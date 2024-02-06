@@ -1,22 +1,26 @@
 import { useState, useEffect } from "react";
 
+const defaultTasks = [
+  { id: 1, content: "zrobić zakupy", done: true },
+  { id: 2, content: "wstawić zmywarkę", done: false },
+  { id: 3, content: "umyć samochód", done: false },
+  { id: 4, content: "zabookować bilety", done: false },
+];
+
 export const useTasks = () => {
-  const defaultTasks = [
-    { id: 1, content: "zrobić zakupy", done: true },
-    { id: 2, content: "wstawić zmywarkę", done: false },
-    { id: 3, content: "umyć samochód", done: false },
-    { id: 4, content: "zabookować bilety", done: false },
-  ];
-
-  const taskListLocalStorage = localStorage.getItem("taskList");
-
   const [taskList, setTaskList] = useState(
-    JSON.parse(taskListLocalStorage) || defaultTasks
+    JSON.parse(localStorage.getItem("taskList")) || defaultTasks
   );
 
   useEffect(() => {
     localStorage.setItem("taskList", JSON.stringify(taskList));
   }, [taskList]);
+
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone((hideDone) => !hideDone);
+  };
 
   const removeTask = (id) => {
     setTaskList((taskList) => taskList.filter((task) => task.id !== id));
@@ -58,6 +62,8 @@ export const useTasks = () => {
     addNewTask,
     toggleTaskDone,
     removeTask,
+    toggleHideDone,
     taskList,
+    hideDone,
   };
 };

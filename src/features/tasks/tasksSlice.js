@@ -4,10 +4,10 @@ const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
     taskList: [
-      { id: 1, content: "zrobić zakupy", done: true },
-      { id: 2, content: "wstawić zmywarkę", done: false },
-      { id: 3, content: "umyć samochód", done: false },
-      { id: 4, content: "zabookować bilety", done: false },
+      { id: "1", content: "zrobić zakupy", done: true },
+      { id: "2", content: "wstawić zmywarkę", done: false },
+      { id: "3", content: "umyć samochód", done: false },
+      { id: "4", content: "zabookować bilety", done: false },
     ],
     hideDone: false,
   },

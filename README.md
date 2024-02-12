@@ -40,7 +40,9 @@
 ## Used technologies and conventions
 
 - **React.js** - Components, JSX, React DOM
-- **React Hooks** - useState, useEffect
+- **React Hooks** - useState, useEffect, useRef
+- **Redux** state managment
+- **Redux Toolkit**
 - **Create React App**
 - **npm**
 - **Node.js**

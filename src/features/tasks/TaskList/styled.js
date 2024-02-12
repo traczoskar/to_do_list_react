@@ -42,7 +42,7 @@ export const Button = styled.button`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: ${({ theme }) => theme.color.sanfelix};
+      background-color: ${({ theme }) => theme.color.bilbao};
 
       &:hover {
         filter: brightness(130%);

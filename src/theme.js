@@ -8,7 +8,7 @@ export const theme = {
     darksilver: "#bbbbbb",
     black: "#000000",
     teal: "#008080",
-    sanfelix: "#0B6207",
+    bilbao: "#327C14",
     milanored: "#B81104",
   },
   breakpoint: {

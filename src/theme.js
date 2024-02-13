@@ -6,6 +6,7 @@ export const theme = {
     alto: "#dddddd",
     silver: "#cccccc",
     darksilver: "#bbbbbb",
+    mineshaft: "#333333",
     black: "#000000",
     teal: "#008080",
     bilbao: "#327C14",

@@ -1,6 +1,4 @@
-{
-    "taskList": {
-      "taskList": [
+[
         {
           "id": "1",
           "content": "zrobić zakupy",
@@ -21,7 +19,4 @@
           "content": "zabookować bilety",
           "done": false
         }
-      ],
-      "hideDone": false
-    }
-  }
+]

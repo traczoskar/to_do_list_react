@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const ButtonsWrapper = styled.div`
   display: flex;
@@ -19,6 +20,26 @@ export const Button = styled.button`
   &:disabled {
     color: ${({ theme }) => theme.color.darksilver};
   }
+  ${({ loading }) =>
+    loading &&
+    css`
+      color: ${({ theme }) => theme.color.darksilver};
+      animation: pulseBlink 1.5s infinite;
+      @keyframes pulseBlink {
+        0% {
+          opacity: 0.5;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        100% {3
+          opacity: 0.5;
+          transform: scale(1);
+        }
+      }
+    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 100%;

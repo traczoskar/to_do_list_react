@@ -1,14 +1,15 @@
-import Form from "./Form";
-import TaskList from "./TaskList";
-import Buttons from "../../Buttons";
 import { useDispatch, useSelector } from "react-redux";
-import { Button } from "../../Buttons/styled.js";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import { Container } from "../../common/Container/styled";
-import { fetchExampleTasks, selectLoading } from "./tasksSlice.js";
+import Form from "./Form/index.js";
+import TaskList from "./TaskList/index.js";
+import Buttons from "../../../Buttons/index.js";
+import { Button } from "../../../Buttons/styled.js";
+import Section from "../../../common/Section/index.js";
+import Header from "../../../common/Header/index.js";
+import { Container } from "../../../common/Container/styled.js";
+import { fetchExampleTasks, selectLoading } from "../tasksSlice.js";
+import Search from "./Search/index.js";
 
-function Tasks() {
+function TasksPage() {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);
 
@@ -27,6 +28,7 @@ function Tasks() {
           </Button>
         }
       />
+      <Section title="Wyszukiwarka" body={<Search />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}
@@ -36,4 +38,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;

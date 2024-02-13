@@ -39,8 +39,8 @@ export const Button = styled.button`
   transition: 0.3s;
   cursor: pointer;
 
-  ${({ toggleDone }) =>
-    toggleDone &&
+  ${({ toggledone }) =>
+    toggledone &&
     css`
       background-color: ${({ theme }) => theme.color.bilbao};
 

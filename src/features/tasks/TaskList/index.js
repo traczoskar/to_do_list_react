@@ -15,7 +15,7 @@ const TaskList = () => {
     <List>
       {taskList.map((task) => (
         <Task hidden={task.done && hideDone} key={task.id}>
-          <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
+          <Button toggledone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✓" : ""}
           </Button>
           <Content done={task.done}>{task.content}</Content>

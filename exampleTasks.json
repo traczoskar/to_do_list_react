@@ -12,11 +12,16 @@
         {
           "id": "3",
           "content": "umyć samochód",
-          "done": false
+          "done": true
         },
         {
           "id": "4",
-          "content": "zabookować bilety samolot",
+          "content": "zabookować bilety na samolot",
+          "done": false
+        },
+        {
+          "id": "5",
+          "content": "odpisać na e-maile",
           "done": false
         }
 ]

@@ -18,10 +18,14 @@
 - Buttons are interactive and its appearance depends of actual state
 - You can mark any task that is done, hide/show done tasks, and mark all done with one button
 - Your actual task list is saved in your local storage and fetched whenever you refresh the app or close the window
+- You can download example tasks using fetch shot from Redux-Saga
+- You can filter the tasks by content using search input
+- You can check indiviual subpage for every task
+- Two main pages built with ReactRouter: TaskList/Author
 
 ## How to use
 
-**1.** Input the name of your task or shopping item that you want to add to your list.
+**1.** Input the name of your task or shopping item that you want to add to your list. / or download example tasks using button i right upper corner of the app.
 
 **2.** _"Click"_ adding the task button on the right side of the input - "_Dodaj zadanie_".
 
@@ -33,7 +37,13 @@
 
 **6.** After you add a task, there will be able 2 additional options: "Hide/Show tasks that are done" and "Finish all tasks".
 
-**7.** Use one of those options to manage your list easier.
+**7.** You can filter your tasks and search the exact one you want by typing task content in the form field above the tasks.
+
+**8.** You can read additional info about the author in the second page switch on the navber in the page header.
+
+**9.** You can check the individual task status by clicking on task content. App will redirect you to the subpage.
+
+**10.** Use those options to manage your list easier.
 
 ![App design](./to_do_list_react_screenshot.png)
 
@@ -41,8 +51,10 @@
 
 - **React.js** - Components, JSX, React DOM
 - **React Hooks** - useState, useEffect, useRef
-- **Redux** state managment
+- **React Router:** app routing managing
+- **Redux:** state managing
 - **Redux Toolkit**
+- **Redux-Saga:** side effects handling
 - **Create React App**
 - **npm**
 - **Node.js**

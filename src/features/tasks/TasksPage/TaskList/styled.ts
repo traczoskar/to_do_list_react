@@ -41,7 +41,7 @@ export const Task = styled.li`
     `}
 `;
 
-export const Content = styled.span`
+export const Content = styled.span<{ done?: boolean }>`
   ${({ done }) =>
     done &&
     css`
@@ -59,7 +59,7 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{ toggleDone?: boolean; remove?: boolean }>`
   border: none;
   height: 30px;
   width: 30px;
@@ -68,8 +68,8 @@ export const Button = styled.button`
   transition: 0.3s;
   cursor: pointer;
 
-  ${({ toggledone }) =>
-    toggledone &&
+  ${({ toggleDone }) =>
+    toggleDone &&
     css`
       background-color: ${({ theme }) => theme.color.bilbao};
 

@@ -5,5 +5,5 @@ export const getExampleTasks = async () => {
     throw new Error(response.statusText);
   }
 
-  return await response.json();
+  return (await response.json()) as string[];
 };

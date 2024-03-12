@@ -7,7 +7,12 @@ import { Container } from "../../../common/Container/styled";
 import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
-  const { id } = useParams();
+
+  interface Params {
+    id: string;
+  }
+
+  const { id } = useParams<Params>();
   const task = useSelector((state) => getTaskById(state, id));
 
   return (

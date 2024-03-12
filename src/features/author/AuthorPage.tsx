@@ -1,7 +1,7 @@
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "../../common/Container/styled";
-import { AboutMe } from "./AboutMe";
+import { AboutMe } from "./AboutMe/index";
 
 export default () => {
   return (

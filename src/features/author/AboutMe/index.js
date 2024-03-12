@@ -5,7 +5,7 @@ export const AboutMe = () => {
     <>
       <Article>
         Mieszkam niedaleko Słupska, na Pomorzu. Z wykształcenia jestem
-        realizatorem dźwięku. Na codzień prowadzę studio nagrań, oraz firmę w
+        realizatorem dźwięku. Na co dzień prowadzę studio nagrań, oraz firmę w
         branży reklamowej / poligraficznej. Nie boję się także pobrudzić sobie
         rąk designem. Lubię wyzwania, dlatego próbuję swoich sił w IT. Odkąd
         pamiętam, jednym z moich marzeń było zrozumieć programowanie.{" "}

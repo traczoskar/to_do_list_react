@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
-import Form from "./Form/index.js";
-import TaskList from "./TaskList/index.js";
-import Buttons from "../../../Buttons/index.js";
-import { Button } from "../../../Buttons/styled.js";
-import Section from "../../../common/Section/index.js";
-import Header from "../../../common/Header/index.js";
-import { Container } from "../../../common/Container/styled.js";
-import { fetchExampleTasks, selectLoading } from "../tasksSlice.js";
-import Search from "./Search/index.js";
+import Form from "./Form/index";
+import TaskList from "./TaskList/index";
+import Buttons from "../../../Buttons/index";
+import { Button } from "../../../Buttons/styled";
+import Section from "../../../common/Section/index";
+import Header from "../../../common/Header/index";
+import { Container } from "../../../common/Container/styled";
+import { fetchExampleTasks, selectLoading } from "../tasksSlice";
+import Search from "./Search/index";
 
 function TasksPage() {
   const dispatch = useDispatch();

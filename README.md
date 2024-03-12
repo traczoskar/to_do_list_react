@@ -55,6 +55,7 @@
 - **Redux:** state managing
 - **Redux Toolkit**
 - **Redux-Saga:** side effects handling
+- **styled-components**
 - **Create React App**
 - **npm**
 - **Node.js**

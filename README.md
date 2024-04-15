@@ -2,7 +2,7 @@
 
 ### **Your daily task assistant**
 
-**To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. You can find below in a few quick steps how to apply its full potential. The construction of this app is based on React.js framework. For sure this repository will be developed in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
+**To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. You can find below in a few quick steps how to apply its full potential. The construction of this app is based on React.js framework using TypeScript language. For sure this repository will be developed in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
 
 ### **[To do list - in React.js - App link](https://traczoskar.github.io/to_do_list_react/)**
 
@@ -47,6 +47,7 @@
 
 ## 🛠&nbsp; Used technologies and conventions
 
+- **TypeScript**
 - **React.js** - Components, JSX, React DOM
 - **React Hooks** - useState, useEffect, useRef
 - **React Router:** app routing managing

@@ -1,29 +1,27 @@
-# To do list - in React.js
+# 📝&nbsp; To do list - in React.js
 
 ### **Your daily task assistant**
 
 **To do list** is a simple task assistant application. Whenever you go to do the shopping or get some things to done my app is at your side. It's very simple and versatile in use. You can find below in a few quick steps how to apply its full potential. The construction of this app is based on React.js framework. For sure this repository will be developed in the nearest future, so don't bother yourself to search other "to-do-lists" and visit us soon to check out the updates.
 
-**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
-
 ### **[To do list - in React.js - App link](https://traczoskar.github.io/to_do_list_react/)**
 
-## Features
+## 🌱&nbsp; Features
 
-- Simple, transparent and minimalistic design
-- Easy and intuitive to use
-- Quick response to every action that user takes with the buttons
-- Versatile and universal application
-- Responsive on any device due to media queries
-- Buttons are interactive and its appearance depends of actual state
-- You can mark any task that is done, hide/show done tasks, and mark all done with one button
-- Your actual task list is saved in your local storage and fetched whenever you refresh the app or close the window
-- You can download example tasks using fetch shot from Redux-Saga
-- You can filter the tasks by content using search input
-- You can check indiviual subpage for every task
-- Two main pages built with ReactRouter: TaskList/Author
+- 👨🏻‍🎨&nbsp; Simple, transparent and minimalistic design
+- 👶&nbsp; Easy and intuitive to use
+- 🚀&nbsp; Quick response to every action that user takes with the buttons
+- 👔&nbsp; Versatile and universal application
+- 📱&nbsp; Responsive on any device due to media queries
+- ⏯&nbsp; Buttons are interactive and its appearance depends of actual state
+- ✅&nbsp; You can mark any task that is done, hide/show done tasks, and mark all done with one button
+- 💽&nbsp; Your actual task list is saved in your local storage and fetched whenever you refresh the app or close the window
+- ⬇️&nbsp; You can download example tasks using fetch shot from Redux-Saga
+- 🔎&nbsp; You can filter the tasks by content using search input
+- 📄&nbsp; You can check indiviual subpage for every task
+- 🪢&nbsp; Two main pages built with ReactRouter: TaskList/Author
 
-## How to use
+## 🤔&nbsp; How to use
 
 **1.** Input the name of your task or shopping item that you want to add to your list. / or download example tasks using button i right upper corner of the app.
 
@@ -47,7 +45,7 @@
 
 ![App design](./to_do_list_react_screenshot.png)
 
-## Used technologies and conventions
+## 🛠&nbsp; Used technologies and conventions
 
 - **React.js** - Components, JSX, React DOM
 - **React Hooks** - useState, useEffect, useRef
@@ -70,9 +68,11 @@
 - **CSS:** Grid
 - **CSS:** Transform and transitions
 
-Below you can seen how does the application look on **mobile devices**:
+Below you can seen how does the application look on 📲 **mobile devices**:
 
 ![Mobile look](./to_do_list_react_mobile.png)
+
+**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 ## Available Scripts
 

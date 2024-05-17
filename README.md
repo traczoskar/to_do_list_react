@@ -57,8 +57,6 @@
 - **styled-components**
 - **Create React App**
 - **npm**
-- **Node.js**
-- **Babel** transform JSX
 - **JS ES6 Features:** (arrays, methods, spread syntax, objects, arrow functions, immutabililty, merging)
 - **JS Async** - setInterval, setTimeOut
 - **localStorage** - tasks saved and fetched
